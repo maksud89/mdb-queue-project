@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ericsson</groupId>
+  <artifactId>mdb-queue-project</artifactId>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>mdb-queue-project-ear</module>
+    <module>mdb-queue-project-ejb</module>
+    <module>mdb-queue-project-producer</module>
+  </modules>
+ <dependencyManagement>
+  <dependencies>
+     <dependency>
+        <groupId>org.jboss.spec</groupId>
+        <artifactId>jboss-javaee-6.0</artifactId>
+        <version>3.0.3.Final</version>
+        <type>pom</type>
+      </dependency>
+  </dependencies>
+  </dependencyManagement>
+</project>
